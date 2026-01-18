@@ -513,3 +513,490 @@ from OLIST_DB.RAW.orders
 [0m23:56:45.541809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCC12C6B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCBA611DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCBA611D50>]}
 [0m23:56:45.542812 [debug] [MainThread]: Flushing usage events
 [0m23:56:45.753476 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:46:58.191500 [debug] [MainThread]: Got an exception trying to initialize tracking
+[0m05:46:58.191548 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 05:46:58.205754 | d5843fd8-b4bb-417a-aa92-4bc13b61f82c ==============================
+[0m05:46:58.205754 [info ] [MainThread]: Running with dbt=1.5.11
+
+
+============================== 05:46:58.205670 | d74c8c17-e59c-4be4-81b9-8540999f1315 ==============================
+[0m05:46:58.205670 [info ] [MainThread]: Running with dbt=1.5.11
+[0m05:46:58.207554 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/airflow/.dbt', 'log_path': '/opt/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m05:46:58.207659 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/opt/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/home/airflow/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m05:46:58.847812 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m05:46:58.847881 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m05:46:58.857500 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m05:46:58.858571 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m05:46:58.879732 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m05:46:58.880889 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m05:46:59.489466 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m05:46:59.504652 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m05:46:59.509103 [debug] [MainThread]: 1699: static parser successfully parsed staging/customer_staging.sql
+[0m05:46:59.512859 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m05:46:59.522704 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m05:46:59.526638 [debug] [MainThread]: 1699: static parser successfully parsed staging/customer_staging.sql
+[0m05:46:59.625333 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m05:46:59.629450 [info ] [MainThread]: 
+[0m05:46:59.631824 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m05:46:59.635603 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_OLIST_DB'
+[0m05:46:59.644976 [debug] [ThreadPool]: Using snowflake connection "list_OLIST_DB"
+[0m05:46:59.645156 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m05:46:59.646517 [debug] [ThreadPool]: On list_OLIST_DB: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "connection_name": "list_OLIST_DB"} */
+show terse schemas in database OLIST_DB
+    limit 10000
+[0m05:46:59.647307 [info ] [MainThread]: 
+[0m05:46:59.647765 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:46:59.649103 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m05:46:59.650946 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_OLIST_DB'
+[0m05:46:59.660671 [debug] [ThreadPool]: Using snowflake connection "list_OLIST_DB"
+[0m05:46:59.662105 [debug] [ThreadPool]: On list_OLIST_DB: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "connection_name": "list_OLIST_DB"} */
+show terse schemas in database OLIST_DB
+    limit 10000
+[0m05:46:59.663355 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:47:00.665124 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m05:47:00.667724 [debug] [ThreadPool]: On list_OLIST_DB: Close
+[0m05:47:00.785337 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m05:47:00.788687 [debug] [ThreadPool]: On list_OLIST_DB: Close
+[0m05:47:00.807746 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_OLIST_DB, now list_OLIST_DB_ANALYTICS)
+[0m05:47:00.812932 [debug] [ThreadPool]: Using snowflake connection "list_OLIST_DB_ANALYTICS"
+[0m05:47:00.814586 [debug] [ThreadPool]: On list_OLIST_DB_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "connection_name": "list_OLIST_DB_ANALYTICS"} */
+show terse objects in OLIST_DB.ANALYTICS
+[0m05:47:00.816820 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:47:00.909914 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_OLIST_DB, now list_OLIST_DB_ANALYTICS)
+[0m05:47:00.915537 [debug] [ThreadPool]: Using snowflake connection "list_OLIST_DB_ANALYTICS"
+[0m05:47:00.916537 [debug] [ThreadPool]: On list_OLIST_DB_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "connection_name": "list_OLIST_DB_ANALYTICS"} */
+show terse objects in OLIST_DB.ANALYTICS
+[0m05:47:00.917270 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:47:01.162760 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m05:47:01.165086 [debug] [ThreadPool]: On list_OLIST_DB_ANALYTICS: Close
+[0m05:47:01.279422 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m05:47:01.281239 [info ] [MainThread]: 
+[0m05:47:01.291949 [debug] [Thread-1 (]: Began running node model.olist_dbt.customer_staging
+[0m05:47:01.292287 [debug] [Thread-2 (]: Began running node model.olist_dbt.my_first_dbt_model
+[0m05:47:01.293793 [info ] [Thread-1 (]: 1 of 3 START sql view model ANALYTICS.customer_staging ......................... [RUN]
+[0m05:47:01.296750 [info ] [Thread-2 (]: 2 of 3 START sql table model ANALYTICS.my_first_dbt_model ...................... [RUN]
+[0m05:47:01.298711 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_OLIST_DB_ANALYTICS, now model.olist_dbt.customer_staging)
+[0m05:47:01.301893 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.olist_dbt.my_first_dbt_model'
+[0m05:47:01.304316 [debug] [Thread-1 (]: Began compiling node model.olist_dbt.customer_staging
+[0m05:47:01.306444 [debug] [Thread-2 (]: Began compiling node model.olist_dbt.my_first_dbt_model
+[0m05:47:01.313212 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dbt.customer_staging"
+[0m05:47:01.316258 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_dbt.my_first_dbt_model"
+[0m05:47:01.336988 [debug] [Thread-2 (]: Timing info for model.olist_dbt.my_first_dbt_model (compile): 05:47:01.314756 => 05:47:01.336741
+[0m05:47:01.340714 [debug] [Thread-2 (]: Began executing node model.olist_dbt.my_first_dbt_model
+[0m05:47:01.360551 [debug] [Thread-1 (]: Timing info for model.olist_dbt.customer_staging (compile): 05:47:01.308279 => 05:47:01.360337
+[0m05:47:01.360999 [debug] [Thread-2 (]: Writing runtime sql for node "model.olist_dbt.my_first_dbt_model"
+[0m05:47:01.363406 [debug] [Thread-1 (]: Began executing node model.olist_dbt.customer_staging
+[0m05:47:01.381696 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dbt.customer_staging"
+[0m05:47:01.391273 [debug] [Thread-2 (]: Using snowflake connection "model.olist_dbt.my_first_dbt_model"
+[0m05:47:01.392601 [debug] [Thread-2 (]: On model.olist_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "node_id": "model.olist_dbt.my_first_dbt_model"} */
+create or replace transient table OLIST_DB.ANALYTICS.my_first_dbt_model
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m05:47:01.393994 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m05:47:01.402364 [debug] [Thread-1 (]: Using snowflake connection "model.olist_dbt.customer_staging"
+[0m05:47:01.404325 [debug] [Thread-1 (]: On model.olist_dbt.customer_staging: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "node_id": "model.olist_dbt.customer_staging"} */
+create or replace   view OLIST_DB.ANALYTICS.customer_staging
+  
+   as (
+    
+
+select
+    order_id,
+    customer_id,
+    order_status,
+    cast(order_purchase_timestamp as timestamp) as order_purchase_timestamp,
+    cast(order_approved_at as timestamp) as order_approved_at,
+    cast(order_delivered_carrier_date as timestamp) as order_delivered_carrier_date,
+    cast(order_delivered_customer_date as timestamp) as order_delivered_customer_date,
+    cast(order_estimated_delivery_date as timestamp) as order_estimated_delivery_date
+from OLIST_DB.RAW.orders
+  );
+[0m05:47:01.406094 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:47:01.501979 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m05:47:01.504858 [debug] [ThreadPool]: On list_OLIST_DB_ANALYTICS: Close
+[0m05:47:01.617145 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m05:47:01.618508 [info ] [MainThread]: 
+[0m05:47:01.631452 [debug] [Thread-1 (]: Began running node model.olist_dbt.customer_staging
+[0m05:47:01.631926 [debug] [Thread-2 (]: Began running node model.olist_dbt.my_first_dbt_model
+[0m05:47:01.633085 [info ] [Thread-1 (]: 1 of 3 START sql view model ANALYTICS.customer_staging ......................... [RUN]
+[0m05:47:01.635140 [info ] [Thread-2 (]: 2 of 3 START sql table model ANALYTICS.my_first_dbt_model ...................... [RUN]
+[0m05:47:01.637821 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_OLIST_DB_ANALYTICS, now model.olist_dbt.customer_staging)
+[0m05:47:01.639562 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.olist_dbt.my_first_dbt_model'
+[0m05:47:01.640898 [debug] [Thread-1 (]: Began compiling node model.olist_dbt.customer_staging
+[0m05:47:01.642147 [debug] [Thread-2 (]: Began compiling node model.olist_dbt.my_first_dbt_model
+[0m05:47:01.649285 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dbt.customer_staging"
+[0m05:47:01.653208 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_dbt.my_first_dbt_model"
+[0m05:47:01.665012 [debug] [Thread-2 (]: Timing info for model.olist_dbt.my_first_dbt_model (compile): 05:47:01.650209 => 05:47:01.664689
+[0m05:47:01.665965 [debug] [Thread-1 (]: Timing info for model.olist_dbt.customer_staging (compile): 05:47:01.643329 => 05:47:01.665703
+[0m05:47:01.667581 [debug] [Thread-2 (]: Began executing node model.olist_dbt.my_first_dbt_model
+[0m05:47:01.668904 [debug] [Thread-1 (]: Began executing node model.olist_dbt.customer_staging
+[0m05:47:01.698310 [debug] [Thread-2 (]: Writing runtime sql for node "model.olist_dbt.my_first_dbt_model"
+[0m05:47:01.714594 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dbt.customer_staging"
+[0m05:47:01.723106 [debug] [Thread-1 (]: Using snowflake connection "model.olist_dbt.customer_staging"
+[0m05:47:01.723729 [debug] [Thread-2 (]: Using snowflake connection "model.olist_dbt.my_first_dbt_model"
+[0m05:47:01.724985 [debug] [Thread-1 (]: On model.olist_dbt.customer_staging: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "node_id": "model.olist_dbt.customer_staging"} */
+create or replace   view OLIST_DB.ANALYTICS.customer_staging
+  
+   as (
+    
+
+select
+    order_id,
+    customer_id,
+    order_status,
+    cast(order_purchase_timestamp as timestamp) as order_purchase_timestamp,
+    cast(order_approved_at as timestamp) as order_approved_at,
+    cast(order_delivered_carrier_date as timestamp) as order_delivered_carrier_date,
+    cast(order_delivered_customer_date as timestamp) as order_delivered_customer_date,
+    cast(order_estimated_delivery_date as timestamp) as order_estimated_delivery_date
+from OLIST_DB.RAW.orders
+  );
+[0m05:47:01.726484 [debug] [Thread-2 (]: On model.olist_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "node_id": "model.olist_dbt.my_first_dbt_model"} */
+create or replace transient table OLIST_DB.ANALYTICS.my_first_dbt_model
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m05:47:01.729982 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:47:01.735338 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m05:47:02.089597 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m05:47:02.105254 [debug] [Thread-1 (]: Timing info for model.olist_dbt.customer_staging (execute): 05:47:01.368711 => 05:47:02.105130
+[0m05:47:02.107580 [debug] [Thread-1 (]: On model.olist_dbt.customer_staging: Close
+[0m05:47:02.219650 [info ] [Thread-1 (]: 1 of 3 OK created sql view model ANALYTICS.customer_staging .................... [[32mSUCCESS 1[0m in 0.92s]
+[0m05:47:02.220985 [debug] [Thread-1 (]: Finished running node model.olist_dbt.customer_staging
+[0m05:47:02.384940 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m05:47:02.400858 [debug] [Thread-1 (]: Timing info for model.olist_dbt.customer_staging (execute): 05:47:01.692734 => 05:47:02.400731
+[0m05:47:02.404152 [debug] [Thread-1 (]: On model.olist_dbt.customer_staging: Close
+[0m05:47:02.519393 [info ] [Thread-1 (]: 1 of 3 OK created sql view model ANALYTICS.customer_staging .................... [[32mSUCCESS 1[0m in 0.88s]
+[0m05:47:02.521659 [debug] [Thread-1 (]: Finished running node model.olist_dbt.customer_staging
+[0m05:47:03.041217 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m05:47:03.044114 [debug] [Thread-2 (]: Timing info for model.olist_dbt.my_first_dbt_model (execute): 05:47:01.342570 => 05:47:03.043989
+[0m05:47:03.045637 [debug] [Thread-2 (]: On model.olist_dbt.my_first_dbt_model: Close
+[0m05:47:03.094399 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m05:47:03.097137 [debug] [Thread-2 (]: Timing info for model.olist_dbt.my_first_dbt_model (execute): 05:47:01.670055 => 05:47:03.097011
+[0m05:47:03.098015 [debug] [Thread-2 (]: On model.olist_dbt.my_first_dbt_model: Close
+[0m05:47:03.163397 [info ] [Thread-2 (]: 2 of 3 OK created sql table model ANALYTICS.my_first_dbt_model ................. [[32mSUCCESS 1[0m in 1.86s]
+[0m05:47:03.165241 [debug] [Thread-2 (]: Finished running node model.olist_dbt.my_first_dbt_model
+[0m05:47:03.167651 [debug] [Thread-4 (]: Began running node model.olist_dbt.my_second_dbt_model
+[0m05:47:03.169211 [info ] [Thread-4 (]: 3 of 3 START sql view model ANALYTICS.my_second_dbt_model ...................... [RUN]
+[0m05:47:03.171602 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.olist_dbt.my_second_dbt_model'
+[0m05:47:03.173699 [debug] [Thread-4 (]: Began compiling node model.olist_dbt.my_second_dbt_model
+[0m05:47:03.177220 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_dbt.my_second_dbt_model"
+[0m05:47:03.191430 [info ] [Thread-2 (]: 2 of 3 OK created sql table model ANALYTICS.my_first_dbt_model ................. [[32mSUCCESS 1[0m in 1.55s]
+[0m05:47:03.193379 [debug] [Thread-2 (]: Finished running node model.olist_dbt.my_first_dbt_model
+[0m05:47:03.195957 [debug] [Thread-4 (]: Began running node model.olist_dbt.my_second_dbt_model
+[0m05:47:03.196659 [debug] [Thread-4 (]: Timing info for model.olist_dbt.my_second_dbt_model (compile): 05:47:03.175460 => 05:47:03.196376
+[0m05:47:03.197991 [info ] [Thread-4 (]: 3 of 3 START sql view model ANALYTICS.my_second_dbt_model ...................... [RUN]
+[0m05:47:03.198505 [debug] [Thread-4 (]: Began executing node model.olist_dbt.my_second_dbt_model
+[0m05:47:03.199979 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.olist_dbt.my_second_dbt_model'
+[0m05:47:03.201565 [debug] [Thread-4 (]: Began compiling node model.olist_dbt.my_second_dbt_model
+[0m05:47:03.201993 [debug] [Thread-4 (]: Writing runtime sql for node "model.olist_dbt.my_second_dbt_model"
+[0m05:47:03.205603 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_dbt.my_second_dbt_model"
+[0m05:47:03.219438 [debug] [Thread-4 (]: Using snowflake connection "model.olist_dbt.my_second_dbt_model"
+[0m05:47:03.223336 [debug] [Thread-4 (]: On model.olist_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "node_id": "model.olist_dbt.my_second_dbt_model"} */
+create or replace   view OLIST_DB.ANALYTICS.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from OLIST_DB.ANALYTICS.my_first_dbt_model
+where id = 1
+  );
+[0m05:47:03.225709 [debug] [Thread-4 (]: Timing info for model.olist_dbt.my_second_dbt_model (compile): 05:47:03.202927 => 05:47:03.225461
+[0m05:47:03.225594 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m05:47:03.228300 [debug] [Thread-4 (]: Began executing node model.olist_dbt.my_second_dbt_model
+[0m05:47:03.232135 [debug] [Thread-4 (]: Writing runtime sql for node "model.olist_dbt.my_second_dbt_model"
+[0m05:47:03.254534 [debug] [Thread-4 (]: Using snowflake connection "model.olist_dbt.my_second_dbt_model"
+[0m05:47:03.257459 [debug] [Thread-4 (]: On model.olist_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "node_id": "model.olist_dbt.my_second_dbt_model"} */
+create or replace   view OLIST_DB.ANALYTICS.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from OLIST_DB.ANALYTICS.my_first_dbt_model
+where id = 1
+  );
+[0m05:47:03.259373 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m05:47:03.631537 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m05:47:03.635607 [debug] [Thread-4 (]: Timing info for model.olist_dbt.my_second_dbt_model (execute): 05:47:03.199693 => 05:47:03.635469
+[0m05:47:03.636937 [debug] [Thread-4 (]: On model.olist_dbt.my_second_dbt_model: Close
+[0m05:47:03.718975 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m05:47:03.723554 [debug] [Thread-4 (]: Timing info for model.olist_dbt.my_second_dbt_model (execute): 05:47:03.229811 => 05:47:03.723389
+[0m05:47:03.728247 [debug] [Thread-4 (]: On model.olist_dbt.my_second_dbt_model: Close
+[0m05:47:03.742373 [info ] [Thread-4 (]: 3 of 3 OK created sql view model ANALYTICS.my_second_dbt_model ................. [[32mSUCCESS 1[0m in 0.57s]
+[0m05:47:03.744489 [debug] [Thread-4 (]: Finished running node model.olist_dbt.my_second_dbt_model
+[0m05:47:03.747780 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:47:03.749703 [debug] [MainThread]: Connection 'model.olist_dbt.customer_staging' was properly closed.
+[0m05:47:03.751077 [debug] [MainThread]: Connection 'model.olist_dbt.my_first_dbt_model' was properly closed.
+[0m05:47:03.752439 [debug] [MainThread]: Connection 'model.olist_dbt.my_second_dbt_model' was properly closed.
+[0m05:47:03.754139 [info ] [MainThread]: 
+[0m05:47:03.755672 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 4.11 seconds (4.11s).
+[0m05:47:03.758064 [debug] [MainThread]: Command end result
+[0m05:47:03.802380 [info ] [MainThread]: 
+[0m05:47:03.804022 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:47:03.805549 [info ] [MainThread]: 
+[0m05:47:03.807079 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m05:47:03.808839 [debug] [MainThread]: Command `dbt run` succeeded at 05:47:03.808737 after 5.66 seconds
+[0m05:47:03.810493 [debug] [MainThread]: Flushing usage events
+[0m05:47:03.870620 [info ] [Thread-4 (]: 3 of 3 OK created sql view model ANALYTICS.my_second_dbt_model ................. [[32mSUCCESS 1[0m in 0.67s]
+[0m05:47:03.872320 [debug] [Thread-4 (]: Finished running node model.olist_dbt.my_second_dbt_model
+[0m05:47:03.875250 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:47:03.876665 [debug] [MainThread]: Connection 'model.olist_dbt.customer_staging' was properly closed.
+[0m05:47:03.878465 [debug] [MainThread]: Connection 'model.olist_dbt.my_first_dbt_model' was properly closed.
+[0m05:47:03.880409 [debug] [MainThread]: Connection 'model.olist_dbt.my_second_dbt_model' was properly closed.
+[0m05:47:03.882187 [info ] [MainThread]: 
+[0m05:47:03.883861 [info ] [MainThread]: Finished running 2 view models, 1 table model in 0 hours 0 minutes and 4.25 seconds (4.25s).
+[0m05:47:03.886117 [debug] [MainThread]: Command end result
+[0m05:47:03.912214 [info ] [MainThread]: 
+[0m05:47:03.914483 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:47:03.916873 [info ] [MainThread]: 
+[0m05:47:03.919123 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m05:47:03.921650 [debug] [MainThread]: Command `dbt run` succeeded at 05:47:03.921501 after 5.77 seconds
+[0m05:47:03.923460 [debug] [MainThread]: Flushing usage events
+[0m05:47:06.914045 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 05:47:06.920246 | c1b3d534-aab8-4f53-a6db-73dd637fb84c ==============================
+[0m05:47:06.920246 [info ] [MainThread]: Running with dbt=1.5.11
+[0m05:47:06.921790 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/airflow/.dbt', 'log_path': '/opt/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m05:47:06.941650 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 05:47:06.949886 | e5fd93f9-31b1-43e7-aa78-4654569b171d ==============================
+[0m05:47:06.949886 [info ] [MainThread]: Running with dbt=1.5.11
+[0m05:47:06.951818 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/airflow/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/opt/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m05:47:07.429316 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m05:47:07.444812 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m05:47:07.464983 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m05:47:07.479003 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m05:47:07.595527 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:47:07.597571 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:47:07.629357 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m05:47:07.632211 [info ] [MainThread]: 
+[0m05:47:07.634963 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m05:47:07.634890 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:47:07.639080 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:47:07.639187 [debug] [MainThread]: Command end result
+[0m05:47:07.652526 [debug] [MainThread]: Command `dbt test` succeeded at 05:47:07.652391 after 0.75 seconds
+[0m05:47:07.653542 [debug] [MainThread]: Flushing usage events
+[0m05:47:07.701416 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m05:47:07.703493 [info ] [MainThread]: 
+[0m05:47:07.704890 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m05:47:07.706423 [debug] [MainThread]: Command end result
+[0m05:47:07.737158 [debug] [MainThread]: Command `dbt test` succeeded at 05:47:07.737004 after 0.83 seconds
+[0m05:47:07.739908 [debug] [MainThread]: Flushing usage events
+[0m05:47:29.309977 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 05:47:29.317645 | 3dd4c587-12c9-4151-b646-f3a6cfc659ce ==============================
+[0m05:47:29.317645 [info ] [MainThread]: Running with dbt=1.5.11
+[0m05:47:29.320259 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/opt/dbt/logs', 'profiles_dir': '/home/airflow/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m05:47:29.784506 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m05:47:29.810020 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m05:47:30.317010 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:47:30.319101 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:47:30.373053 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m05:47:30.376482 [info ] [MainThread]: 
+[0m05:47:30.379738 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m05:47:30.382732 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_OLIST_DB'
+[0m05:47:30.393577 [debug] [ThreadPool]: Using snowflake connection "list_OLIST_DB"
+[0m05:47:30.395790 [debug] [ThreadPool]: On list_OLIST_DB: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "connection_name": "list_OLIST_DB"} */
+show terse schemas in database OLIST_DB
+    limit 10000
+[0m05:47:30.399839 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:47:31.089963 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m05:47:31.092171 [debug] [ThreadPool]: On list_OLIST_DB: Close
+[0m05:47:31.194451 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_OLIST_DB, now list_OLIST_DB_ANALYTICS)
+[0m05:47:31.201200 [debug] [ThreadPool]: Using snowflake connection "list_OLIST_DB_ANALYTICS"
+[0m05:47:31.203979 [debug] [ThreadPool]: On list_OLIST_DB_ANALYTICS: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "connection_name": "list_OLIST_DB_ANALYTICS"} */
+show terse objects in OLIST_DB.ANALYTICS
+[0m05:47:31.205936 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:47:32.457435 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.0 seconds
+[0m05:47:32.460607 [debug] [ThreadPool]: On list_OLIST_DB_ANALYTICS: Close
+[0m05:47:32.556619 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m05:47:32.559042 [info ] [MainThread]: 
+[0m05:47:32.570860 [debug] [Thread-1 (]: Began running node model.olist_dbt.customer_staging
+[0m05:47:32.571278 [debug] [Thread-2 (]: Began running node model.olist_dbt.my_first_dbt_model
+[0m05:47:32.572813 [info ] [Thread-1 (]: 1 of 3 START sql view model ANALYTICS.customer_staging ......................... [RUN]
+[0m05:47:32.575611 [info ] [Thread-2 (]: 2 of 3 START sql table model ANALYTICS.my_first_dbt_model ...................... [RUN]
+[0m05:47:32.579833 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_OLIST_DB_ANALYTICS, now model.olist_dbt.customer_staging)
+[0m05:47:32.582526 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.olist_dbt.my_first_dbt_model'
+[0m05:47:32.584333 [debug] [Thread-1 (]: Began compiling node model.olist_dbt.customer_staging
+[0m05:47:32.586275 [debug] [Thread-2 (]: Began compiling node model.olist_dbt.my_first_dbt_model
+[0m05:47:32.592851 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_dbt.customer_staging"
+[0m05:47:32.596498 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_dbt.my_first_dbt_model"
+[0m05:47:32.614137 [debug] [Thread-2 (]: Timing info for model.olist_dbt.my_first_dbt_model (compile): 05:47:32.595092 => 05:47:32.613879
+[0m05:47:32.616069 [debug] [Thread-1 (]: Timing info for model.olist_dbt.customer_staging (compile): 05:47:32.588317 => 05:47:32.615854
+[0m05:47:32.616470 [debug] [Thread-2 (]: Began executing node model.olist_dbt.my_first_dbt_model
+[0m05:47:32.618614 [debug] [Thread-1 (]: Began executing node model.olist_dbt.customer_staging
+[0m05:47:32.639031 [debug] [Thread-2 (]: Writing runtime sql for node "model.olist_dbt.my_first_dbt_model"
+[0m05:47:32.652354 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_dbt.customer_staging"
+[0m05:47:32.669643 [debug] [Thread-2 (]: Using snowflake connection "model.olist_dbt.my_first_dbt_model"
+[0m05:47:32.671654 [debug] [Thread-1 (]: Using snowflake connection "model.olist_dbt.customer_staging"
+[0m05:47:32.672029 [debug] [Thread-2 (]: On model.olist_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "node_id": "model.olist_dbt.my_first_dbt_model"} */
+create or replace transient table OLIST_DB.ANALYTICS.my_first_dbt_model
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m05:47:32.673958 [debug] [Thread-1 (]: On model.olist_dbt.customer_staging: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "node_id": "model.olist_dbt.customer_staging"} */
+create or replace   view OLIST_DB.ANALYTICS.customer_staging
+  
+   as (
+    
+
+select
+    order_id,
+    customer_id,
+    order_status,
+    cast(order_purchase_timestamp as timestamp) as order_purchase_timestamp,
+    cast(order_approved_at as timestamp) as order_approved_at,
+    cast(order_delivered_carrier_date as timestamp) as order_delivered_carrier_date,
+    cast(order_delivered_customer_date as timestamp) as order_delivered_customer_date,
+    cast(order_estimated_delivery_date as timestamp) as order_estimated_delivery_date
+from OLIST_DB.RAW.orders
+  );
+[0m05:47:32.675784 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m05:47:32.677902 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:47:33.653139 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m05:47:33.671298 [debug] [Thread-2 (]: Timing info for model.olist_dbt.my_first_dbt_model (execute): 05:47:32.620798 => 05:47:33.671155
+[0m05:47:33.673836 [debug] [Thread-2 (]: On model.olist_dbt.my_first_dbt_model: Close
+[0m05:47:33.768250 [info ] [Thread-2 (]: 2 of 3 OK created sql table model ANALYTICS.my_first_dbt_model ................. [[32mSUCCESS 1[0m in 1.19s]
+[0m05:47:33.775773 [debug] [Thread-2 (]: Finished running node model.olist_dbt.my_first_dbt_model
+[0m05:47:33.778006 [debug] [Thread-4 (]: Began running node model.olist_dbt.my_second_dbt_model
+[0m05:47:33.779700 [info ] [Thread-4 (]: 3 of 3 START sql view model ANALYTICS.my_second_dbt_model ...................... [RUN]
+[0m05:47:33.781591 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.olist_dbt.my_second_dbt_model'
+[0m05:47:33.783034 [debug] [Thread-4 (]: Began compiling node model.olist_dbt.my_second_dbt_model
+[0m05:47:33.829107 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_dbt.my_second_dbt_model"
+[0m05:47:33.844931 [debug] [Thread-4 (]: Timing info for model.olist_dbt.my_second_dbt_model (compile): 05:47:33.784363 => 05:47:33.844677
+[0m05:47:33.846428 [debug] [Thread-4 (]: Began executing node model.olist_dbt.my_second_dbt_model
+[0m05:47:33.850128 [debug] [Thread-4 (]: Writing runtime sql for node "model.olist_dbt.my_second_dbt_model"
+[0m05:47:33.863054 [debug] [Thread-4 (]: Using snowflake connection "model.olist_dbt.my_second_dbt_model"
+[0m05:47:33.865498 [debug] [Thread-4 (]: On model.olist_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "olist_dbt", "target_name": "dev", "node_id": "model.olist_dbt.my_second_dbt_model"} */
+create or replace   view OLIST_DB.ANALYTICS.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from OLIST_DB.ANALYTICS.my_first_dbt_model
+where id = 1
+  );
+[0m05:47:33.867387 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m05:47:33.975228 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m05:47:33.979223 [debug] [Thread-1 (]: Timing info for model.olist_dbt.customer_staging (execute): 05:47:32.639422 => 05:47:33.979084
+[0m05:47:33.986517 [debug] [Thread-1 (]: On model.olist_dbt.customer_staging: Close
+[0m05:47:34.074156 [info ] [Thread-1 (]: 1 of 3 OK created sql view model ANALYTICS.customer_staging .................... [[32mSUCCESS 1[0m in 1.49s]
+[0m05:47:34.076386 [debug] [Thread-1 (]: Finished running node model.olist_dbt.customer_staging
+[0m05:47:34.331736 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m05:47:34.335468 [debug] [Thread-4 (]: Timing info for model.olist_dbt.my_second_dbt_model (execute): 05:47:33.847782 => 05:47:34.335334
+[0m05:47:34.337578 [debug] [Thread-4 (]: On model.olist_dbt.my_second_dbt_model: Close
+[0m05:47:34.431707 [info ] [Thread-4 (]: 3 of 3 OK created sql view model ANALYTICS.my_second_dbt_model ................. [[32mSUCCESS 1[0m in 0.65s]
+[0m05:47:34.434019 [debug] [Thread-4 (]: Finished running node model.olist_dbt.my_second_dbt_model
+[0m05:47:34.437637 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:47:34.439203 [debug] [MainThread]: Connection 'model.olist_dbt.customer_staging' was properly closed.
+[0m05:47:34.440894 [debug] [MainThread]: Connection 'model.olist_dbt.my_first_dbt_model' was properly closed.
+[0m05:47:34.442196 [debug] [MainThread]: Connection 'model.olist_dbt.my_second_dbt_model' was properly closed.
+[0m05:47:34.444326 [info ] [MainThread]: 
+[0m05:47:34.446757 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 4.06 seconds (4.06s).
+[0m05:47:34.448912 [debug] [MainThread]: Command end result
+[0m05:47:34.477595 [info ] [MainThread]: 
+[0m05:47:34.480869 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:47:34.483189 [info ] [MainThread]: 
+[0m05:47:34.485655 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m05:47:34.488437 [debug] [MainThread]: Command `dbt run` succeeded at 05:47:34.488333 after 5.21 seconds
+[0m05:47:34.490857 [debug] [MainThread]: Flushing usage events
+[0m05:47:37.215526 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 05:47:37.220700 | c9d65919-28ea-44e6-ada5-e2bfb9be2217 ==============================
+[0m05:47:37.220700 [info ] [MainThread]: Running with dbt=1.5.11
+[0m05:47:37.222256 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/opt/dbt/logs', 'profiles_dir': '/home/airflow/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m05:47:37.638800 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m05:47:37.653913 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m05:47:37.824749 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:47:37.826248 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:47:37.849695 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m05:47:37.851805 [info ] [MainThread]: 
+[0m05:47:37.853192 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m05:47:37.855337 [debug] [MainThread]: Command end result
+[0m05:47:37.874770 [debug] [MainThread]: Command `dbt test` succeeded at 05:47:37.874631 after 0.67 seconds
+[0m05:47:37.875753 [debug] [MainThread]: Flushing usage events
