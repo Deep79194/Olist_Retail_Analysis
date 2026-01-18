@@ -1,32 +1,132 @@
-[0m23:21:50.421699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002023244C450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020232446510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002023248D190>]}
+[0m23:32:21.369506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8EB5C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8EBA0FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8EB5C550>]}
 
 
-============================== 23:21:50.436031 | b33d4e71-e5d4-4952-80e5-38b1883eaac6 ==============================
-[0m23:21:50.436031 [info ] [MainThread]: Running with dbt=1.10.15
-[0m23:21:50.437944 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt init olist_dbt', 'no_print': 'None', 'write_json': 'True', 'log_format': 'default', 'printer_width': '80', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\deep7\\.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
-[0m23:21:50.585951 [debug] [MainThread]: Starter project path: C:\Users\deep7\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
-[0m23:21:50.687464 [info ] [MainThread]: 
-Your new dbt project "olist_dbt" was created!
+============================== 23:32:21.375504 | db460e93-c489-4523-84f6-10c6e68a74fe ==============================
+[0m23:32:21.375504 [info ] [MainThread]: Running with dbt=1.10.15
+[0m23:32:21.376505 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'cache_selected_only': 'False', 'no_print': 'None', 'target_path': 'None', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_path': 'C:\\Users\\deep7\\Olist_Retail_Analysis\\dbt\\olist_dbt\\logs', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\deep7\\.dbt', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m23:32:21.402907 [info ] [MainThread]: dbt version: 1.10.15
+[0m23:32:21.403413 [info ] [MainThread]: python version: 3.11.0
+[0m23:32:21.404611 [info ] [MainThread]: python path: C:\Users\deep7\AppData\Local\Programs\Python\Python311\python.exe
+[0m23:32:21.405618 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m23:32:22.081706 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:32:22.082706 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:32:22.082706 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:32:22.138705 [info ] [MainThread]: Using profiles dir at C:\Users\deep7\.dbt
+[0m23:32:22.139727 [info ] [MainThread]: Using profiles.yml file at C:\Users\deep7\.dbt\profiles.yml
+[0m23:32:22.139727 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\deep7\Olist_Retail_Analysis\dbt\olist_dbt\dbt_project.yml
+[0m23:32:22.141727 [info ] [MainThread]: adapter type: snowflake
+[0m23:32:22.141727 [info ] [MainThread]: adapter version: 1.10.3
+[0m23:32:22.236306 [info ] [MainThread]: Configuration:
+[0m23:32:22.237292 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:32:22.238316 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:32:22.238316 [info ] [MainThread]: Required dependencies:
+[0m23:32:22.239346 [debug] [MainThread]: Executing "git --help"
+[0m23:32:22.278608 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:32:22.278608 [debug] [MainThread]: STDERR: "b''"
+[0m23:32:22.279623 [info ] [MainThread]:  - git [[32mOK found[0m]
 
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
+[0m23:32:22.280609 [info ] [MainThread]: Connection:
+[0m23:32:22.280609 [info ] [MainThread]:   account: XWDAXVR-PO81175
+[0m23:32:22.281611 [info ] [MainThread]:   user: DEEP1526
+[0m23:32:22.282609 [info ] [MainThread]:   database: OLIST_DB
+[0m23:32:22.282609 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m23:32:22.283611 [info ] [MainThread]:   role: SYSADMIN
+[0m23:32:22.284905 [info ] [MainThread]:   schema: RAW
+[0m23:32:22.284905 [info ] [MainThread]:   authenticator: None
+[0m23:32:22.285914 [info ] [MainThread]:   oauth_client_id: None
+[0m23:32:22.286914 [info ] [MainThread]:   query_tag: None
+[0m23:32:22.286914 [info ] [MainThread]:   client_session_keep_alive: False
+[0m23:32:22.287914 [info ] [MainThread]:   host: None
+[0m23:32:22.287914 [info ] [MainThread]:   port: None
+[0m23:32:22.288916 [info ] [MainThread]:   proxy_host: None
+[0m23:32:22.288916 [info ] [MainThread]:   proxy_port: None
+[0m23:32:22.289915 [info ] [MainThread]:   protocol: None
+[0m23:32:22.291371 [info ] [MainThread]:   connect_retries: 1
+[0m23:32:22.291371 [info ] [MainThread]:   connect_timeout: None
+[0m23:32:22.292383 [info ] [MainThread]:   retry_on_database_errors: False
+[0m23:32:22.293386 [info ] [MainThread]:   retry_all: False
+[0m23:32:22.294381 [info ] [MainThread]:   insecure_mode: False
+[0m23:32:22.294381 [info ] [MainThread]:   reuse_connections: True
+[0m23:32:22.295381 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m23:32:22.295381 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m23:32:22.296380 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m23:32:22.598063 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m23:32:22.648088 [debug] [MainThread]: Using snowflake connection "debug"
+[0m23:32:22.649089 [debug] [MainThread]: On debug: select 1 as id
+[0m23:32:22.649089 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:32:23.438897 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.790 seconds
+[0m23:32:23.440897 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
 
-  https://docs.getdbt.com/docs/configure-your-profile
+[0m23:32:23.444417 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:32:23.445856 [debug] [MainThread]: Command `dbt debug` succeeded at 23:32:23.445856 after 2.17 seconds
+[0m23:32:23.446873 [debug] [MainThread]: Connection 'debug' was left open.
+[0m23:32:23.447974 [debug] [MainThread]: On debug: Close
+[0m23:32:23.561862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC87E85110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCAFC3CDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC87EC1CD0>]}
+[0m23:32:23.562847 [debug] [MainThread]: Flushing usage events
+[0m23:32:23.744079 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:34:56.550644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC5414EC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC540583D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC5419B010>]}
 
-One more thing:
 
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+============================== 23:34:56.555647 | 1e3579cb-c528-4cef-82fc-e711e19c8009 ==============================
+[0m23:34:56.555647 [info ] [MainThread]: Running with dbt=1.10.15
+[0m23:34:56.556649 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\Users\\deep7\\.dbt', 'no_print': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\Users\\deep7\\Olist_Retail_Analysis\\dbt\\logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'printer_width': '80', 'write_json': 'True'}
+[0m23:34:56.576761 [info ] [MainThread]: dbt version: 1.10.15
+[0m23:34:56.576761 [info ] [MainThread]: python version: 3.11.0
+[0m23:34:56.577761 [info ] [MainThread]: python path: C:\Users\deep7\AppData\Local\Programs\Python\Python311\python.exe
+[0m23:34:56.578760 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m23:34:57.511804 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:34:57.511804 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:34:57.512800 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:34:57.573284 [info ] [MainThread]: Using profiles dir at C:\Users\deep7\.dbt
+[0m23:34:57.574784 [info ] [MainThread]: Using profiles.yml file at C:\Users\deep7\.dbt\profiles.yml
+[0m23:34:57.574784 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\deep7\Olist_Retail_Analysis\dbt\dbt_project.yml
+[0m23:34:57.577003 [info ] [MainThread]: adapter type: snowflake
+[0m23:34:57.577003 [info ] [MainThread]: adapter version: 1.10.3
+[0m23:34:57.680969 [info ] [MainThread]: Configuration:
+[0m23:34:57.681969 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:34:57.682964 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:34:57.682964 [info ] [MainThread]: Required dependencies:
+[0m23:34:57.683971 [debug] [MainThread]: Executing "git --help"
+[0m23:34:57.727651 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:34:57.728651 [debug] [MainThread]: STDERR: "b''"
+[0m23:34:57.729656 [info ] [MainThread]:  - git [[32mOK found[0m]
 
-  https://community.getdbt.com/
+[0m23:34:57.730651 [info ] [MainThread]: Connection:
+[0m23:34:57.730651 [info ] [MainThread]:   account: XWDAXVR-PO81175
+[0m23:34:57.731646 [info ] [MainThread]:   user: DEEP1526
+[0m23:34:57.731646 [info ] [MainThread]:   database: OLIST_DB
+[0m23:34:57.732643 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m23:34:57.732643 [info ] [MainThread]:   role: SYSADMIN
+[0m23:34:57.733651 [info ] [MainThread]:   schema: RAW
+[0m23:34:57.733651 [info ] [MainThread]:   authenticator: None
+[0m23:34:57.735097 [info ] [MainThread]:   oauth_client_id: None
+[0m23:34:57.735097 [info ] [MainThread]:   query_tag: None
+[0m23:34:57.736100 [info ] [MainThread]:   client_session_keep_alive: False
+[0m23:34:57.737101 [info ] [MainThread]:   host: None
+[0m23:34:57.737101 [info ] [MainThread]:   port: None
+[0m23:34:57.738100 [info ] [MainThread]:   proxy_host: None
+[0m23:34:57.739101 [info ] [MainThread]:   proxy_port: None
+[0m23:34:57.740117 [info ] [MainThread]:   protocol: None
+[0m23:34:57.740117 [info ] [MainThread]:   connect_retries: 1
+[0m23:34:57.741116 [info ] [MainThread]:   connect_timeout: None
+[0m23:34:57.741116 [info ] [MainThread]:   retry_on_database_errors: False
+[0m23:34:57.742108 [info ] [MainThread]:   retry_all: False
+[0m23:34:57.743102 [info ] [MainThread]:   insecure_mode: False
+[0m23:34:57.743102 [info ] [MainThread]:   reuse_connections: True
+[0m23:34:57.744114 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m23:34:57.744114 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m23:34:57.745102 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m23:34:58.018731 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m23:34:58.066253 [debug] [MainThread]: Using snowflake connection "debug"
+[0m23:34:58.066253 [debug] [MainThread]: On debug: select 1 as id
+[0m23:34:58.067244 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:34:58.886926 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.821 seconds
+[0m23:34:58.888928 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
 
-Happy modeling!
-
-[0m23:21:50.688464 [info ] [MainThread]: Setting up your profile.
-[0m23:21:59.468544 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
-[0m23:21:59.469543 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
-[0m23:21:59.470576 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
-[0m23:23:38.408051 [info ] [MainThread]: Profile olist_dbt written to C:\Users\deep7\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m23:23:38.410052 [debug] [MainThread]: Command `dbt init` succeeded at 23:23:38.409051 after 108.20 seconds
-[0m23:23:38.410052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202324CFFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022B822A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020232445910>]}
-[0m23:23:38.411050 [debug] [MainThread]: Flushing usage events
-[0m23:23:38.676657 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:34:58.888928 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:34:58.889940 [debug] [MainThread]: Command `dbt debug` succeeded at 23:34:58.889940 after 2.42 seconds
+[0m23:34:58.890937 [debug] [MainThread]: Connection 'debug' was left open.
+[0m23:34:58.890937 [debug] [MainThread]: On debug: Close
+[0m23:34:59.028533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC53C58310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC53ECCD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AC4D4B1C50>]}
+[0m23:34:59.029533 [debug] [MainThread]: Flushing usage events
+[0m23:34:59.230306 [debug] [MainThread]: An error was encountered while trying to flush usage events
