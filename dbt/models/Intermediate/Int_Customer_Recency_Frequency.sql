@@ -18,8 +18,7 @@ customer_agg as (
         count(order_id) as total_orders,
         min(order_date) as first_order_date,
         max(order_date) as last_order_date,
-
-        avg(days_since_last_order) as avg_days_between_orders
+        coalesce(avg(days_since_last_order), 0) as avg_days_between_orders
 
     from customer_orders
     group by customer_unique_id
