@@ -33,7 +33,7 @@ select
     c.*,
     a.as_of_date,
     datediff(day, c.last_order_date, a.as_of_date) as days_since_last_order_current,
-    datediff(day, c.first_order_date, c.last_order_date) as customer_tenure_days
+    datediff(day, c.first_order_date, a.as_of_date) as customer_tenure_days
 
 from customer_agg c
 cross join as_of_date a
