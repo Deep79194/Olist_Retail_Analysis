@@ -9,3 +9,8 @@ sources:
       - name: customers
       - name: productivity
       - name: payments
+      - name: sellers
+      - name: products
+      - name: order_items
+      - name: order_reviews
+      - name: category_name_translation
